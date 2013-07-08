@@ -1,5 +1,6 @@
 
-<%= form_tag(user_create_path, :id => 'signup') do |f| %>
+
+<%= form_tag(user_create_path, :id => 'signup') do  %>
   <h2>Sign Up</h2>
   <%= render 'error_messages', object: @new_user %> 
   <%= label_tag(:first_name, "First Name", :class => "label_width") %>

@@ -1,2 +1,5 @@
-<h1>User#login</h1>
-<p>Find me in app/views/user/login.html.erb</p>
+<% if @count == 1 %> 
+  <p class="count">Hello <%= @name %>! This is your first log in! Exciting!</p>
+<% else %>  
+  <p class="count">Hello <%= @name %>! You have logged in <%= @count %> times</p>
+<% end %>

@@ -45,8 +45,12 @@ h1 {
 }
 
   /* Flash messages */
+  .flash-messages {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-  .welcome, .goodbye {
+  .welcome, .goodbye, .flash-messages {
     text-align: center;
   }
 
