@@ -40,6 +40,8 @@ class UserController < ApplicationController
   end
 
   def logout
-    render :index
+    session.clear
+    flash[:notice] = "Logged Out"
+    redirect_to '/'
   end
 end
