@@ -1,0 +1,10 @@
+<% if signed_in? %> 
+  <% if @count == 1 %> 
+    <p class="count">Hello <%= @name %>! This is your first log in! Exciting!</p>
+  <% else %>  
+    <p class="count">Hello <%= @name %>! You have logged in <%= @count %> times</p>
+  <% end %>
+  <div class="signout_button">
+    <button class="signout_link"><%= link_to "Sign Out", session_path, :confirm => "Are you sure?", :method => :delete %></button>
+  </div>  
+<% end %>  
