@@ -42,7 +42,11 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+group :development, :test do
+  gem 'debugger'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'capybara'
+end
 
 # 
 gem 'rails_12factor', group: :production

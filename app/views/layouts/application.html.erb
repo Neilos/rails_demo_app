@@ -11,7 +11,7 @@
 <div class="wrapper">
   <h1>The Pointless Login Counter App!</h1>
 
-  <div class="flash-messages">
+  <div id="flash-messages">
     <% flash.each do |key, message| %>
       <div id="<%= key %>" class="flash"><%= message %></div>
     <% end %>

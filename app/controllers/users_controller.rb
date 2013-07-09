@@ -15,10 +15,9 @@ class UsersController < ApplicationController
 
     if @new_user.valid?
       @new_user.save
-      flash[:notice] = "Sign up successful. Now login."
-      redirect_to :new_session
+      render :json => "Sign up successful. Now login.".to_json
     else
-      render :new
+      render :partial => 'error_messages', :locals => { object: @new_user }
     end
   end
 

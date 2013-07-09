@@ -45,8 +45,8 @@ h1 {
 }
 
   /* Flash messages */
-  .flash-messages {
-    text-align: center;
+  #flash-messages {
+    text-align: left;
     margin-bottom: 10px;
   }
 
